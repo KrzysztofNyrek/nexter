@@ -1,5 +1,5 @@
 {
-  "name": "jagodawebpage",
+  "name": "nexter",
   "version": "1.0.0",
   "description": "Simple website with some photo, text and link to YT video.",
   "main": "index.js",
@@ -29,5 +29,9 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.25"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+    "grid",
+    "css"
+  ]
 }
