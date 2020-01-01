@@ -1,5 +1,6 @@
 .features{
   grid-column: center-start / center-end;
+  align-items: start;
   margin: 15rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -17,6 +18,7 @@
     width: 4.5rem;
     height: 4.5rem;
     grid-row: 1 /span 2;
+    transform: translateY(-1rem);
   }
   &__text{
     font-size: 1.7rem;
