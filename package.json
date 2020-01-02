@@ -8,28 +8,28 @@
     "devserver": "browser-sync  start --server --browser firefox --files [css/*.css, index.html] --host 192.168.1.105",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "prefix:css": "postcss css/style.comp.css -u autoprefixer -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dekstryn/JagodaWebPage.git"
+    "url": ""
   },
   "author": "Krzysztof Nyrek",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dekstryn/JagodaWebPage/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Dekstryn/JagodaWebPage#readme",
+  "homepage": "",
   "devDependencies": {
-    "autoprefixer": "^9.7.3",
     "concat": "^1.0.3",
     "node-sass": "^4.13.0",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^7.0.25"
+    "npm-run-all": "^4.1.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "postcss-cli": "^6.1.3"
+  },
   "keywords": [
     "grid",
     "css"
